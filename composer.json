@@ -1,49 +1,48 @@
 {
-    "name": "mmerlijn/follow-up-invite",
-    "description": "Follow up patient invitation system",
-    "type": "project",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Menno",
-            "email": "menno@mmerlijn.nl"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": "^7.4|^8.0",
-        "livewire/livewire": "dev-master",
-        "spatie/laravel-permission": "dev-main",
-        "barryvdh/laravel-dompdf": "1.0.x-dev",
-        "mmerlijn/blade-components": "dev-master",
-        "maatwebsite/excel": "4.0.x-dev"
-    },
-    "require-dev": {
-        "illuminate/support": "8.x-dev",
-        "orchestra/testbench": "6.x-dev",
-        "phpunit/phpunit": "9.5.x-dev"
-    },
-    "extra": {
-        "laravel": {
-            "providers":[
-                "mmerlijn\\followUpInvite\\FollowUpInviteServiceProvider"
-            ]
-
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "mmerlijn\\followUpInvite\\": "src",
-            "mmerlijn\\followUpInvite\\Database\\Factories\\": "database/factories"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "mmerlijn\\followUpInvite\\tests\\": "tests"
-        }
-    },
-    "scripts": {
-        "test": "vendor/bin/phpunit",
-        "test-f": "vendor/bin/phpunit --filter"
+  "name": "mmerlijn/follow-up-invite",
+  "description": "Follow up patient invitation system",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Menno",
+      "email": "menno@mmerlijn.nl"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.4|^8.0",
+    "livewire/livewire": "^v2.7",
+    "spatie/laravel-permission": "^4.0",
+    "barryvdh/laravel-dompdf": "^1.0",
+    "mmerlijn/blade-components": "dev-master",
+    "maatwebsite/excel": "^4.0"
+  },
+  "require-dev": {
+    "illuminate/support": "^8.0",
+    "orchestra/testbench": "^6.0",
+    "phpunit/phpunit": "^9.5"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "mmerlijn\\followUpInvite\\FollowUpInviteServiceProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "mmerlijn\\followUpInvite\\": "src",
+      "mmerlijn\\followUpInvite\\Database\\Factories\\": "database/factories"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "mmerlijn\\followUpInvite\\tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-f": "vendor/bin/phpunit --filter"
+  }
 }
